@@ -9,6 +9,7 @@ from langchain_community.tools import PolygonLastQuote, PolygonTickerNews, Polyg
 import gradio as gr
 from dotenv import load_dotenv
 load_dotenv()
+
 openai_api_key = os.getenv("OPENAI_API_KEY")
 polygon_api_key = os.getenv("POLYGON_API_KEY")
 prompt = hub.pull("hwchase17/openai-functions-agent")
